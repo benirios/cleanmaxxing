@@ -1,0 +1,10 @@
+{
+    "name": "cleanmaxxing",
+    "version": "1.0.8",
+    "description": "Clean code auditing skill for Claude Code",
+    "bin": {
+        "cleanmaxxing": "install.js"
+    },
+    "type": "module",
+    "license": "MIT"
+}

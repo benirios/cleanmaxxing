@@ -1,0 +1,16 @@
+id,rule,category,severity,description,recommendation
+PERF001,Avoid unnecessary loops,Algorithm,High,Repeated or nested loops can slow execution,Use efficient data structures and reduce loop complexity
+PERF002,Reduce time complexity,Algorithm,Critical,Code with poor complexity does not scale,Prefer O(n) or O(log n) solutions over O(n²)
+PERF003,Cache repeated computations,Optimization,Medium,Same value is recalculated multiple times,Store repeated results in variables or memoization
+PERF004,Avoid blocking operations,Async,High,Blocking calls freeze execution,Use async/await or background processing
+PERF005,Lazy load heavy resources,Loading,Medium,Large resources slow startup,Load only when needed
+PERF006,Minimize network requests,Network,High,Too many requests increase latency,Batch requests or use caching
+PERF007,Optimize database queries,Database,Critical,Slow queries affect app performance,Use indexes, pagination, and selective fields
+PERF008,Avoid memory leaks,Memory,Critical,Unused references consume memory,Clean up listeners, timers, subscriptions, and caches
+PERF009,Limit large object creation,Memory,Medium,Frequent allocations increase garbage collection,Reuse objects where reasonable
+PERF010,Debounce frequent events,UI,Medium,Events like scroll or input can trigger excessive work,Use debounce or throttle
+PERF011,Compress assets,Assets,Medium,Large assets increase load time,Compress images, scripts, and styles
+PERF012,Use pagination,Data,High,Loading too much data at once slows response,Paginate or virtualize large lists
+PERF013,Avoid unnecessary re-renders,Frontend,High,Extra renders hurt responsiveness,Use memoization and stable props
+PERF014,Remove unused code,Bundle,Medium,Dead code increases bundle size,Tree-shake and delete unused imports
+PERF015,Measure before optimizing,Process,Medium,Guessing can waste effort,Use profiling tools and benchmarks first

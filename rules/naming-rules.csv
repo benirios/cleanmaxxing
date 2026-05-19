@@ -1,0 +1,33 @@
+category,rule,bad_example,good_example,severity,auto_fixable
+variables,useDescriptiveNames,x,y,userAge,error,yes
+variables,avoidSingleLetterNames,i,j,totalPrice,index,partial
+variables,booleanPrefix,active,isActive,error,yes
+variables,constantUppercase,maxretry,MAX_RETRY_COUNT,error,yes
+variables,noHungarianNotation,strName,userName,warning,yes
+functions,useVerbForFunctions,data(),fetchUserData(),error,yes
+functions,camelCaseFunctions,get_user(),getUser(),error,yes
+functions,avoidGenericFunctionNames,handle(),processPayment(),warning,no
+functions,functionLengthReflectsPurpose,doEverything(),calculateInvoiceTotal(),warning,no
+classes,pascalCaseClasses,usermanager,UserManager,error,yes
+classes,nounBasedClassNames,ManageStuff,PaymentProcessor,warning,no
+classes,noAbbreviations,UsrMgr,UserManager,warning,partial
+files,kebabCaseFiles,UserService.ts,user-service.ts,error,yes
+files,matchFileAndExportName,helpers.ts with UserService,user-service.ts,error,partial
+constants,useMeaningfulConstantNames,TIME,REQUEST_TIMEOUT_MS,warning,yes
+enums,pascalCaseEnums,status_enum,OrderStatus,error,yes
+enums,enumMembersUppercase,pending,PENDING,warning,yes
+interfaces,prefixInterfacesConsistently,IUser or UserContract,UserRepository,error,no
+interfaces,pascalCaseInterfaces,userrepo,UserRepository,error,yes
+database,snakeCaseColumns,userName,user_name,error,yes
+database,pluralTableNames,user,users,warning,yes
+apis,resourceBasedEndpoints,/getUsers,/users,warning,no
+apis,useConsistentHttpVerbNaming,/createUser,/users POST,error,no
+tests,testFilesSuffix,userTest.js,user.test.js,error,yes
+tests,testDescriptionsReadable,shouldWork,should return user when ID exists,warning,no
+react,prefixHooksWithUse,authHook,useAuth,error,yes
+react,componentPascalCase,loginform,LoginForm,error,yes
+react,propsDescriptive,p,data,warning,no
+css,kebabCaseClasses,mainContainer,main-container,error,yes
+css,avoidDeeplyGenericClassNames,box,product-card,warning,no
+folders,featureBasedFolderNames,misc,authentication,warning,no
+folders,lowercaseFolders,Components,components,error,yes

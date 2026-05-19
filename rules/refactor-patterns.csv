@@ -1,0 +1,26 @@
+id,pattern,category,problem,solution,priority
+RP001,Extract Function,Functions,Function does too many things,Move a clear block into a named function,high
+RP002,Inline Function,Functions,Function adds indirection without value,Replace calls with the function body,medium
+RP003,Extract Variable,Readability,Expression is complex or repeated,Store expression in a well-named variable,high
+RP004,Inline Variable,Readability,Variable name adds no clarity,Replace variable with direct expression,low
+RP005,Rename Variable,Naming,Name is vague or misleading,Use intention-revealing names,high
+RP006,Rename Function,Naming,Function name hides behavior,Use verb-based descriptive names,high
+RP007,Replace Magic Number,Constants,Raw values appear without meaning,Move value to a named constant,high
+RP008,Remove Dead Code,Cleanup,Unused code increases noise,Delete unreachable or unused code,high
+RP009,Consolidate Duplicate Code,DRY,Same logic appears multiple times,Extract shared logic into one place,high
+RP010,Split Large Class,Architecture,Class has too many responsibilities,Separate responsibilities into smaller classes,high
+RP011,Move Method,Architecture,Method belongs to another class/module,Move it closer to the data it uses,medium
+RP012,Replace Conditional With Polymorphism,Complexity,Many type-based conditionals,Use strategy/classes per behavior,medium
+RP013,Guard Clauses,Control Flow,Deep nested if statements,Return early for invalid/simple cases,high
+RP014,Replace Boolean Flag With Separate Methods,API Design,Boolean parameter changes behavior,Create explicit methods for each action,medium
+RP015,Introduce Parameter Object,API Design,Too many related parameters,Group them into one object,medium
+RP016,Encapsulate Condition,Readability,Condition logic is hard to understand,Move condition into a named predicate,high
+RP017,Replace Loop With Pipeline,Readability,Manual loops obscure transformation,Use map/filter/reduce when clearer,medium
+RP018,Simplify Error Handling,Reliability,Errors are swallowed or duplicated,Centralize clear error handling,high
+RP019,Separate Query From Command,Design,Function both returns data and mutates state,Split read and write operations,medium
+RP020,Dependency Injection,Testability,Code creates hard-coded dependencies,Pass dependencies from outside,high
+RP021,Extract Interface,Architecture,Code depends on concrete implementation,Depend on an abstraction,medium
+RP022,Reduce Function Arguments,Maintainability,Function has too many parameters,Group or remove unnecessary parameters,high
+RP023,Normalize File Structure,Architecture,Files are hard to navigate,Organize by feature or responsibility,medium
+RP024,Replace Comments With Clear Code,Readability,Comments explain confusing code,Improve names and structure instead,medium
+RP025,Add Tests Before Refactor,Testing,Risky change lacks safety net,Create tests around current behavior first,high
