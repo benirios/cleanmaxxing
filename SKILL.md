@@ -1,9 +1,9 @@
+---
+name: CleanMaxxing
+description: Clean code auditing and optimization engine
+---
 
----
-name: cleanmaxxing
-description: Code cleanliness, architecture, maintainability, and performance intelligence with enforceable engineering standards
----
-# cleanmaxxing
+# CleanMaxxing
 Comprehensive engineering guide for writing scalable, maintainable, efficient, and production-grade code.
 Contains:
 - Clean architecture rules

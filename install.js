@@ -5,7 +5,7 @@ import os from "os";
 import path from "path";
 import { execSync } from "child_process";
 
-const repo = "https://github.com/YOUR_USERNAME/cleanmaxxing.git";
+const repo = "https://github.com/benirios/cleanmaxxing";
 const installDir = path.join(os.homedir(), ".claude", "skills", "cleanmaxxing");
 
 fs.mkdirSync(path.dirname(installDir), { recursive: true });
