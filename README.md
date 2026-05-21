@@ -1,268 +1,416 @@
 ![alt text](https://github.com/benirios/cleanmaxxing/blob/main/cmaxxing.png "Logo Title Text 1")
-AI-powered code quality auditing and refactoring engine focused on clean architecture, maintainability, performance, and scalable engineering practices.
+Cleanmaxxing
 
----
+English · Português · 简体中文 · 日本語 · 한국어
 
-# Installation
+A light-weight code quality, architecture auditing, and automated refactoring system for Claude Code, Codex, Cursor, Windsurf, OpenCode, Gemini CLI, Copilot, and more.
 
-## NPX (Recommended)
+Solves code entropy — the gradual degradation of readability, maintainability, and performance as AI-generated codebases scale.
 
-Run instantly without installing globally:
+npm version npm downloads GitHub stars License
 
-```bash
-npx cleanmaxxing ./your-project
-```
+npx cleanmaxxing@latest
 
----
+Works on Mac, Windows, and Linux.
 
-## Global Installation
+⸻
 
-```bash
-npm install -g cleanmaxxing
-```
+Cleanmaxxing Install
 
-Then run:
+“If your codebase became a mess after 3 weeks of vibe coding, this fixes it.”
 
-```bash
-cleanmaxxing ./your-project
-```
+“Finally a tool that audits architecture instead of just formatting code.”
 
----
+“Feels like having a senior engineer constantly reviewing the entire repo.”
 
-## Local Development Setup
+⸻
 
-Clone the repository:
+Trusted by developers building AI products, SaaS apps, internal tools, automation systems, and startup MVPs.
 
-```bash
-git clone <your-repo-url>
-cd cleanmaxxing
-```
+⸻
 
-Install dependencies:
+Important
 
-```bash
-npm install
-```
+Returning to Cleanmaxxing?
 
-Run locally:
+Run:
 
-```bash
-node cli.js ./your-project
-```
+/cleanmaxxing-map-codebase
 
----
+to rebuild architecture awareness and refresh the audit index before running deeper analysis commands.
 
-# Usage
+Your code is fine — Cleanmaxxing just needs updated structural context.
 
-## Analyze a Project
+⸻
 
-```bash
-npx cleanmaxxing ./src
-```
+Why I Built This
 
-or
+Most AI-generated codebases decay extremely fast.
 
-```bash
-cleanmaxxing ./src
-```
+The first few days feel productive — then suddenly:
 
----
+* duplicated logic everywhere
+* 900-line components
+* broken abstractions
+* inconsistent naming
+* dead code
+* impossible-to-debug architecture
+* performance regressions
+* “temporary” hacks everywhere
 
-# Example Output
+Traditional linters don’t solve this.
 
-```txt
-[✓] Scanning project...
-[✓] Running detectors...
-[✓] Applying engineering rules...
-[✓] Generating report...
+They detect syntax problems.
 
-Report generated:
-reports/report.md
-```
+They don’t reason about architecture quality, maintainability, scalability, or long-term entropy.
 
----
+So I built Cleanmaxxing.
 
-# Features
+The complexity lives inside the system:
 
-- Code smell detection
-- Architecture auditing
-- Performance analysis
-- Complexity detection
-- Naming consistency validation
-- Refactor suggestions
-- Rule-based scoring system
-- Search-engine-powered rule matching
-- AI-friendly markdown reports
+* architecture analysis
+* pattern detection
+* code smell indexing
+* context-aware refactoring
+* structural scoring
+* rule engines
+* dependency analysis
+* modularity auditing
 
----
+What you see:
+a few commands that continuously clean and stabilize your codebase.
 
-# What Cleanmaxxing Detects
+⸻
 
-## Code Smells
+How It Works
 
-- Long functions
-- Deep nesting
-- Duplicate logic
-- God classes
-- Large files
-- Dead code
+The loop is simple.
 
-## Architecture Issues
+1. Map the Codebase
 
-- Tight coupling
-- Circular dependencies
-- Layer violations
-- Poor modularization
+/cleanmaxxing-map-codebase
 
-## Performance Problems
+Indexes:
 
-- Expensive loops
-- Repeated computations
-- Inefficient patterns
-- Heavy rendering logic
+* architecture
+* frameworks
+* conventions
+* folder structure
+* dependency graph
+* component hierarchy
+* code smells
+* complexity hotspots
 
-## Maintainability Risks
+Builds the structural context used by all other commands.
 
-- High complexity
-- Poor naming
-- Low cohesion
-- Large responsibilities
+⸻
 
----
+2. Run a Full Audit
 
-# Project Structure
+/cleanmaxxing-audit
 
-```txt
-cleanmaxxing/
-│
-├── cleanmaxxing.py
-├── cli.py
-├── cli.js
-├── install.js
-│
-├── engine/
-│   ├── detectors.py
-│   ├── file_analyzer.py
-│   ├── project_analyzer.py
-│   ├── report_generator.py
-│   └── search_engine.py
-│
-├── prompts/
-│   └── rule-engine.md
-│
-├── rules/
-│   ├── architecture-rules.csv
-│   ├── code-smells.csv
-│   ├── complexity-thresholds.csv
-│   ├── naming-rules.csv
-│   └── performance-rules.csv
-│
-└── reports/
-    └── report.md
-```
+Performs:
 
----
+* architecture analysis
+* complexity scoring
+* duplicate detection
+* performance inspection
+* naming consistency checks
+* modularity analysis
+* maintainability scoring
+* anti-pattern detection
 
-# Report System
+Outputs a detailed REPORT.md.
 
-Cleanmaxxing generates structured markdown reports including:
+⸻
 
-- Architecture analysis
-- Complexity warnings
-- Naming violations
-- Performance risks
-- Refactor opportunities
-- Engineering scores
+3. Detect Structural Problems
 
-Output:
+/cleanmaxxing-detect
 
-```txt
-reports/report.md
-```
+Finds:
 
----
+* god objects
+* fat components
+* circular dependencies
+* dead code
+* over-engineering
+* deeply nested logic
+* bad abstractions
+* repeated patterns
+* broken separation of concerns
 
-# Rule Engine
+⸻
 
-Rules are CSV-driven for speed and extensibility.
+4. Refactor
+
+/cleanmaxxing-refactor
+
+Generates:
+
+* cleaner abstractions
+* modular architecture
+* naming improvements
+* folder restructuring
+* extracted utilities
+* simplified logic
+* performance improvements
+
+Without rewriting the entire codebase.
+
+⸻
+
+5. Verify
+
+/cleanmaxxing-verify
+
+Checks whether:
+
+* refactors introduced regressions
+* architecture improved
+* complexity decreased
+* maintainability score increased
+* patterns became more consistent
+
+⸻
+
+6. Repeat
+
+audit → detect → refactor → verify
+
+Until the codebase becomes:
+
+* maintainable
+* scalable
+* readable
+* performant
+* production-ready
+
+⸻
+
+Getting Started
+
+npx cleanmaxxing@latest
+
+The installer prompts for:
+
+* runtime
+* global/local install
+* rule profiles
+* architecture strictness
+* framework presets
+
+Supported runtimes:
+
+* Claude Code
+* Codex
+* Cursor
+* Windsurf
+* OpenCode
+* Gemini CLI
+* Copilot
+* Kilo
+* and more
+
+⸻
+
+Core Commands
+
+Command	What it does
+/cleanmaxxing-map-codebase	Index architecture and conventions
+/cleanmaxxing-audit	Full code quality and architecture audit
+/cleanmaxxing-detect	Detect structural and architectural issues
+/cleanmaxxing-refactor	Generate cleaner implementations
+/cleanmaxxing-verify	Verify improvements and regression safety
+/cleanmaxxing-report	Generate maintainability report
+/cleanmaxxing-performance	Analyze performance bottlenecks
+/cleanmaxxing-architecture	Deep architecture analysis
+/cleanmaxxing-complexity	Detect complexity hotspots
+/cleanmaxxing-dependencies	Analyze dependency graph
+/cleanmaxxing-dead-code	Find unused code and files
+
+⸻
+
+Why It Works
+
+Most AI coding workflows fail for 3 reasons:
+
+1. Context Rot
+
+As context windows grow:
+
+* quality drops
+* duplication increases
+* abstractions drift
+* architecture collapses
+
+Cleanmaxxing continuously rebuilds structural awareness.
+
+⸻
+
+2. No Architecture Awareness
+
+Most tools:
+
+* lint syntax
+* format code
+* maybe typecheck
+
+They do not understand:
+
+* system structure
+* modularity
+* maintainability
+* dependency health
+* scalability
+
+Cleanmaxxing does.
+
+⸻
+
+3. No Long-Term Refactoring Loop
+
+Most developers:
+
+* keep shipping
+* never restructure
+* accumulate entropy
+
+Cleanmaxxing creates a continuous cleanup pipeline.
+
+⸻
+
+Features
+
+Architecture Analysis
+
+* Layer validation
+* Domain separation
+* Dependency health
+* Circular import detection
+* Monolith detection
+
+Code Quality
+
+* Naming consistency
+* Complexity scoring
+* Duplicate logic detection
+* Dead code analysis
+* Readability scoring
+
+Performance
+
+* Render bottlenecks
+* Unnecessary rerenders
+* Heavy queries
+* Expensive loops
+* Memory waste
+
+Refactoring Engine
+
+* Utility extraction
+* Component splitting
+* Service isolation
+* Folder restructuring
+* Hook decomposition
+* Abstraction cleanup
+
+⸻
+
+Configuration
+
+Settings live in:
+
+.cleanmaxxing/config.json
 
 Example:
 
-```csv
-pattern,severity,recommendation
-long_function,high,Extract smaller methods
-deep_nesting,medium,Reduce conditional complexity
-```
+{
+  "mode": "strict",
+  "architecture": true,
+  "performance": true,
+  "maxComplexity": 10,
+  "detectDeadCode": true,
+  "framework": "react"
+}
 
-This allows:
+⸻
 
-- Easy customization
-- Community rule packs
-- AI-generated rules
-- Fast pattern matching
+Report System
 
----
+Cleanmaxxing generates:
 
-# Search Engineering System
+* REPORT.md
+* ARCHITECTURE.md
+* PERFORMANCE.md
+* REFACTOR_PLAN.md
 
-The internal search engine powers:
+Each report contains:
 
-- Rule lookup
-- Pattern prioritization
-- Semantic matching
-- Detector routing
+* severity scoring
+* file references
+* detected issues
+* recommended fixes
+* maintainability insights
 
-Core file:
+⸻
 
-```txt
-engine/search_engine.py
-```
+Example Workflow
 
----
+/cleanmaxxing-map-codebase
+/cleanmaxxing-audit
+/cleanmaxxing-detect
+/cleanmaxxing-refactor
+/cleanmaxxing-verify
 
-# Vision
+⸻
 
-Cleanmaxxing aims to become:
+Philosophy
 
-- An AI-native code quality standard
-- A universal engineering auditing layer
-- A scalable refactoring intelligence engine
+AI-generated code should not become:
 
-The goal is not just clean code.
+* unreadable
+* bloated
+* over-engineered
+* fragile
 
-The goal is scalable systems, maintainable engineering, and efficient architecture.
+Cleanmaxxing exists to continuously compress entropy and keep AI-built systems production-grade.
 
----
+⸻
 
-# Future Roadmap
+Troubleshooting
 
-- AST-based analysis
-- Multi-language support
-- GitHub Actions integration
-- VSCode extension
-- Auto-refactors
-- Technical debt scoring
-- Complexity heatmaps
-- Architecture visualization
-- CI/CD enforcement
-- Security auditing
+Commands not showing up?
 
----
+Restart your runtime after installation.
 
-# Contributing
+Typical install locations:
 
-Contributions are welcome.
+* ~/.claude/skills/
+* ~/.codex/skills/
+* runtime-specific skill directories
 
-Ideas:
+⸻
 
-- New detectors
-- Better rules
-- Language parsers
-- Performance optimizations
-- AI integrations
+Something broken?
 
----
+Re-run the installer:
 
-# License
+npx cleanmaxxing@latest
 
-MIT License
+The installer is idempotent.
+
+⸻
+
+Community
+
+Project	Platform
+Cleanmaxxing	GitHub
+Discussions	Discord
+Updates	X (Twitter)
+
+⸻
+
+License
+
+MIT License. See LICENSE for details.
